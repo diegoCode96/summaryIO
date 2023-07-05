@@ -21,7 +21,7 @@ const Main = () => {
   const [link, setLink] = useState([]);
 
   useEffect(() => {
-    const json = "/data.json";
+    const json = "./data.json";
 
     axios
       .get(json)
@@ -51,6 +51,7 @@ const Main = () => {
         <button className="bg-[#303b5a] hover:transition-all hover:scale-105 hover:bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue  text-primary capitalize px-4 py-[10px] rounded-3xl mb-2 sm:mb-5">continue</button>
       </article>
     </section>
+
   );
 };
 export default Main;
