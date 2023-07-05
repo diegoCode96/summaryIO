@@ -22,12 +22,14 @@ const Main = () => {
 
   useEffect(() => {
     const json = "/public/data/data.json";
+    
 
     axios
       .get(json)
       .then(({ data }) => setLink(data))
 
       .catch((err) => console.log(err));
+     
   }, []);
 
   return (
