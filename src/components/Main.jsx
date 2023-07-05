@@ -21,7 +21,7 @@ const Main = () => {
   const [link, setLink] = useState([]);
 
   useEffect(() => {
-    const json = "./data.json";
+    const json = "/data.json";
 
     axios
       .get(json)
