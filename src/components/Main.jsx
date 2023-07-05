@@ -1,7 +1,4 @@
-import { data } from "autoprefixer";
-import axios from "axios";
-import { useEffect } from "react";
-import { useState } from "react";
+import link from "../data/data.json"
 
 const textColor = {
   reaction: "text-lightRed",
@@ -18,19 +15,6 @@ const bgColor = {
 }
 
 const Main = () => {
-  const [link, setLink] = useState([]);
-
-  useEffect(() => {
-    const json = "/src/data/data.json";
-    
-
-    axios
-      .get(json)
-      .then(({ data }) => setLink(data))
-
-      .catch((err) => console.log(err));
-     
-  }, []);
 
   return (
     <section className="px-5">
