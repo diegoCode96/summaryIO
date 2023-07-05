@@ -21,7 +21,7 @@ const Main = () => {
   const [link, setLink] = useState([]);
 
   useEffect(() => {
-    const json = "/public/data/data.json";
+    const json = "/src/data/data.json";
     
 
     axios
