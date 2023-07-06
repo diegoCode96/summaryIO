@@ -8,7 +8,7 @@ function App() {
 
   return (
     <main className="sm:flex sm:justify-center sm:items-center sm:h-screen">
-      <section className="sm:grid sm:grid-cols-2 sm:shadow-xl sm:rounded-3xl sm:overflow-hidden sm:w-[32rem]">
+      <section className="sm:grid sm:grid-cols-2 sm:shadow-xl sm:rounded-3xl sm:overflow-hidden sm:w-[40rem] sm:h-[24rem]">
       <Header />
       <Main />
       </section>
